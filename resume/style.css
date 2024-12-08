@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.resumediv{
+    width: 80%;
+    margin-left: 5rem;
+    border: 3px solid rgb(95, 94, 94);
+    border-radius: 50px;   
+}
+
+.maincontainer{
+    display: flex;
+    width: 70%;
+    margin-left: 9.375rem;
+   
+    
+    
+
+}
+.leftchild, .rightchild{
+    flex: 1;   
+}
+header{
+    width: 950px;
+    background-color: #032155;
+    display: flex;
+    color: whitesmoke;
+    margin-top: 3.75rem;
+    border-radius: 99px 0 0 99px;
+    margin-left: 3.125rem;
+      
+}
+.hr{
+    border: 1.5px solid rgb(95, 94, 94);
+    margin-top: 2.8125rem;
+    width: 59.375rem;
+    margin-left: 3rem;
+}
+#hrtwo{
+    border: 1.5px solid rgb(95, 94, 94);
+    margin-right: 5rem;
+    margin-top: 1.875rem;
+}
+.content{
+    margin-top: 3.125rem;
+}
+
+header img{
+height:14.375rem;
+border-radius: 50%;
+margin-right: 3.75rem;
+margin-top: -1.25rem;
+margin-bottom: -1.875rem;
+border: 8px solid rgb(95, 94, 94)
+}
+.leftchild{
+    padding-left:3.125rem;
+}
+
+.about,.Education{
+    margin-top: 3.125rem;
+}
+.about h1,.contact h1 {
+    margin-left: 3.75rem;
+}
+.about p ,ul{
+    margin-top: 0.625rem;
+    line-height: 1.5625rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+ .p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+.contact{
+margin-top: 3.2rem;
+}
+.contact h3 {
+    margin-top: 0.625rem; 
+    font-size: 1.375rem; 
+}
+.contact p,.Experience p ,.Education p{
+    font-size: 1.125rem;
+    line-height: 1.5625;
+    font-weight: 600;
+}
+ul{
+    margin-left: 1.25rem;
+}
+#p1 ,#p3{
+    margin-top: 0.625rem;
+}
+#p2 ,#p4{
+    margin-top: 1.5625rem;
+}
+.Experience {
+    margin-top: 1.875rem;
+}
+
+.contact h1,.about h1,.Education h1,.Experience h1{
+    font-size: 1.75rem;
+    background-color: #032155;
+    width: 15.625rem;
+    height: 2.5rem;
+    margin-left: -1.25rem;
+    text-align: center;
+    color: whitesmoke;
+    border: 3px solid rgb(95, 94, 94);  
+}
+#skill{
+    font-size: 1.75rem;
+    margin-top: 1.25rem;
+    margin-left: 3.75rem;
+    text-align: center;
+    background-color:#032155 ;
+    margin-left: -1.25rem;
+    width: 15.625rem;
+    height: 2.5rem;
+    margin-left: -1.25rem;
+    color: whitesmoke;
+    border: 3px solid rgb(95, 94, 94);  
+}
+#Lang{
+    font-size: 1.70rem;
+    margin-top: 1.25rem;
+    margin-left: 3.75rem;
+    text-align: center;
+    background-color:#032155 ;
+    margin-left: -1.25rem;
+    width: 15.625rem;
+    height: 2.7rem;
+    margin-left: -1.25rem;
+    color: whitesmoke;
+    border: 3px solid rgb(95, 94, 94);  
+}
+
+#sharebtn , #copybtn,#editbtn{
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color:#032155 ;
+    width: 15rem;
+    height: 3.5rem;
+    margin-left: 8rem;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    border: 3px solid rgb(95, 94, 94); 
+    font-weight: 600;
+    &:hover{
+        background-color: rgb(94, 93, 93);
+    }
+    &:active{
+        transform: scale(0.995);
+    } 
+}
+
+
+
+#bold {
+    font-size: 1.25rem;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+ 
+@media (min-width:600px) and (max-width:767px){
+    
+    .resumediv {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0; 
+        margin-right: 0;
+    
+    }
+    #btn{
+        gap:1rem;
+        margin-left: 2rem;
+    }
+    button{
+    
+        font-size: 0.9rem;
+    }
+    header{
+    height:11.25rem ;
+    width: 25rem;
+    margin-left: 1rem;
+    }
+    header, aside, main{
+        width: 100%; 
+    }
+    .leftchild, .rightchild {
+        width: 100%; 
+    }
+.rightchild {
+    margin-left: 5.2rem;
+}
+#hrtwo{
+    display: none;
+}
+    
+    .leftchild{
+margin-left: -10.2rem;
+    }
+    .hide-on-small {
+        display: none;
+    }
+    
+    
+}
+    
+
+
+@media (min-width:768px) and (max-width:837px){
+    
+    .maincontainer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row; 
+        margin: 0; 
+        
+    }
+    #btn{
+        gap:1rem;
+        margin-left: 4rem;
+    }
+    #hrtwo{
+        margin-left:0.9rem;
+    }
+
+    .hr {
+        width: 93%;
+        margin-left: 2rem;
+    }
+    
+    .leftchild {
+    
+    margin-right: -7rem;
+    }
+    .rightchild{
+        margin-right: -8rem;
+    }
+    header{
+        height:11.25rem ;
+        width: 25rem;
+        margin-left: -0.11rem;
+        }
+        header, aside, main{
+            width: 100%; 
+        }
+        .leftchild, .rightchild {
+            width: 100%; 
+            margin: 0;
+            
+        }
+        .hide-on-small {
+            display: none;
+        }
+        
+}
+
+@media (min-width:838px) and (max-width:1024px){
+    
+    .maincontainer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row; 
+        margin: 0; 
+        
+    }
+    #btn{
+        gap:1rem;
+        margin-left: 6rem;
+    }
+    #hrtwo{
+        margin-left:0.9rem;
+    }
+
+    .hr {
+        width: 93%;
+        margin-left: 2rem;
+    }
+    
+    .leftchild {
+    
+    margin-right: -7rem;
+    }
+    .rightchild{
+        margin-right: -8rem;
+    }
+    header{
+        height:11.25rem ;
+        width: 25rem;
+        margin-left: -0.11rem;
+        }
+        header, aside, main{
+            width: 100%; 
+        }
+        .leftchild, .rightchild {
+            width: 100%; 
+            margin: 0;
+            
+        }
+}
+
+ @media (min-width:1025px) and (max-width: 1440px){
+    .maincontainer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+}
+#btn{
+    gap:1rem;
+    margin-left: 12rem;
+}
+header{
+    height:12.25rem ;
+    width: 50.3rem;
+    margin-left: 0.5rem;
+
+}
+
+.hr {
+    width: 95%;
+    margin-left: 1.5rem;
+}
+
+ }
